@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Buy Membership</title>
+        <link rel="icon"
+            href="https://travel.roadstransporter.com/wp-content/uploads/2021/06/eicher-truck-logo.png"
+            type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/header.css">
+        <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet">
+        <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #fffbfb;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex; /* Flexbox for layout */
+            flex-wrap: wrap; /* Wrap items if they exceed container width */
+            justify-content: space-between; /* Space between left and right sections */
+        }
+        .purchase-section {
+            width: 100%; /* Full width on smaller screens */
+            margin-bottom: 30px;
+        }
+        .purchase-section h2 {
+            color: #333333;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .purchase-section p {
+            color: #666666;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .left-section {
+            width: 60%;
+            padding-right: 20px;
+            box-sizing: border-box; /* Ensure padding doesn't increase width */
+        }
+        .right-section {
+            width: 40%;
+            box-sizing: border-box; /* Ensure padding doesn't increase width */
+        }
+        .plan-description {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+        .plan-description h3 {
+            margin-top: 0;
+            color: #D81F1B;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .plan-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #666666;
+        }
+        .plan-description li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .plan-description li:before {
+            content: "\2022";
+            color: #D81F1B;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555555;
+            font-weight: 500;
+        }
+        .input-field {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333333;
+            transition: border-color 0.3s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        .button {
+            background-color: #D81F1B;
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ad0906;
+        }
+        /* Header specific styles */
+        header {
+            background-color: #fffefe;
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            top: -20px;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+        }
+        #shopName {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        #collection {
+            font-weight: bold;
+            display: flex;
+        }
+        #collection a {
+            text-decoration: none;
+            color: rgb(29, 29, 29);
+            margin-left: 20px;
+        }
+        #user {
+            display: flex;
+            gap: 20px;
+        }
+        .userIcon {
+            font-size: 2rem;
+            color: #333333;
+        }
+        .addedToCart {
+            position: relative;
+            color: #333333;
+            font-size: 1.7rem;
+        }
+        #badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: #fff;
+            font-size: 0.8rem;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+        h5 {
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px 20px;
+            color: #D81F1B;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack sections vertically on smaller screens */
+            }
+            .left-section, .right-section {
+                width: 100%; /* Full width on smaller screens */
+                padding-right: 0;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="container">
+                <!-- Shop Name -->
+                <div id="shopName"><a href="index.html"><img
+                            src="https://www.motorworldindia.com/wp-content/uploads/2020/04/Eicher-logo.jpg"
+                            alt="Shop Logo" height="30"></a></div>
+                <div id="collection">
+                    <div><a href="sell.html">Sell your vehicle</a></div>
+                    <div><a href="index.html">Brand new vehicles</a></div>
+                    <div><a href="used.html">Pre-owned vehicles</a></div>
+                </div>
+                <!-- User Section (Cart and User Icon) -->
+                <div id="user">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart addedToCart"><div
+                                id="badge">0</div></i>
+                    </a>
+                    <a href="profile.html">
+                        <i class="fas fa-user-circle userIcon"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="left-section">
+                <h5>Plans description</h5>
+                <!-- Plan descriptions here -->
+                <div class="plan-description">
+                    <h3>Basic Plan (₹699/month)</h3>
+                    <ul>
+                        <li>Unlimited vehicle listings</li>
+                        <li>Basic listing features (title, description, price,
+                            photos)</li>
+                        <li>Access to our community forum</li>
+                    </ul>
+                </div>
+                <div class="plan-description">
+                    <h3>Premium Plan (₹1399/month)</h3>
+                    <ul>
+                        <li>All Basic Plan features</li>
+                        <li>Enhanced listing features (video, 360-degree views,
+                            priority listing)</li>
+                        <li>Priority customer support</li>
+                        <li>Access to exclusive promotions and discounts</li>
+                    </ul>
+                </div>
+                <div class="plan-description">
+                    <h3>Elite Plan (₹2099/month)</h3>
+                    <ul>
+                        <li>All Premium Plan features</li>
+                        <li>Personalized concierge service</li>
+                        <li>Unlimited access to our vehicle inspection
+                            service</li>
+                        <li>Free listing upgrades (e.g. featured listings,
+                            sponsored listings)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="purchase-section">
+                    <h2>Buy Membership</h2>
+                    <p>Get access to exclusive features and benefits by buying a
+                        membership on our vehicle selling platform.</p>
+                    <form>
+                        <div class="form-group">
+                            <label class="label" for="name">Name:</label>
+                            <input type="text" id="name" class="input-field"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="email">Email:</label>
+                            <input type="email" id="email" class="input-field"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label"
+                                for="password">Password:</label>
+                            <input type="password" id="password"
+                                class="input-field" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label"
+                                for="membership-plan">Membership Plan:</label>
+                            <select id="membership-plan" class="input-field"
+                                required>
+                                <option value>Select a plan</option>
+                                <option value="basic">Basic
+                                    (₹699/month)</option>
+                                <option value="premium">Premium
+                                    (₹1399/month)</option>
+                                <option value="elite">Elite
+                                    (₹2099/month)</option>
+                            </select>
+                        </div>
+                        <button class="button" type="submit">Buy
+                            Membership</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="4"></div>
+        <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sell Your Vehicle Online</title>
+        <link rel="stylesheet" href="sell.css">
+        <link rel="stylesheet" href="css/header.css">
+        <style>
+        .modal-content form {
+    max-height: 380px; /* Reduced maximum height for form */
+    overflow-y: auto; /* Enables scrolling within the form if needed */
+}
+
+        }
+
+@media (max-width: 1768px) {
+    .modal-content {
+        width: 90%;
+        max-width: 90%;
+        margin: 10% auto;
+}
+}
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fefefe;
+    margin: 5% auto; /* Adjusted margin-top for higher positioning */
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #888;
+    width: 80%;
+    height: 75%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+    overflow: hidden;
+        }
+    
+        .modal-content h2 {
+    font-size: 1.2em; /* Reduced heading font size */
+}
+.modal-content p {
+    font-size: 0.9em; /* Reduced paragraph font size */
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-width: 90%;
+        margin: 10% auto; /* Adjusted for smaller screens */
+    }
+} 
+
+        @keyframes modalopen {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Perks Sections Grid */
+        .perks-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .perks-section {
+            /* background-color: #f9f9f9; */
+            padding: 20px;
+            border: 3px solid #D42218;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .perks-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .perks-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <section>
+                <!-- MAIN CONTAINER -->
+                <div id="container">
+                    <!-- SHOP NAME -->
+                    <div id="shopName"><a href="index.html"><img
+                                src="https://www.motorworldindia.com/wp-content/uploads/2020/04/Eicher-logo.jpg"
+                                alt height="30"></a></div>
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <div id="collection">
+                        <div id="clothing"><a href="index.html">Brand new
+                                Vehicle</a></div>
+                        <div id="accessories"><a href="used.html">Pre-Owned
+                                vehicles</a></div>
+                        <div id="accessories"><a
+                                href="prime.html">Prime-Membership</a></div>
+                    </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <!-- <a href="cart.html"> <i
+                                class="fas fa-shopping-cart addedToCart"><div
+                                    id="badge">
+                                </div></i></a> -->
+                        <a href="profile.html"> <i
+                                class="fas fa-user-circle userIcon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Sell Your Vehicle Online</h1>
+                <p>Reach thousands of potential buyers and sell your vehicle
+                    quickly and easily</p>
+                <button onclick="openModal()">Get Started</button>
+            </section>
+
+            <!-- Sell Form as a modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <section class="sell-form">
+                        <h2>Sell Your Vehicle</h2>
+                        <form>
+                            <label for="make">Registration number:</label>
+                            <input type="text" id="make" name="make"><br>
+                            <label for="model">Model:</label>
+                            <input type="text" id="model" name="model"><br>
+                            <label for="year">Year:</label>
+                            <input type="number" id="year" name="year"><br>
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="price"><br>
+                            <label for="description">Description:</label>
+                            <textarea id="description"
+                                name="description"></textarea><br>
+                            <label for="images">Upload Images:</label>
+                            <input type="file" id="images" name="images"
+                                multiple><br>
+                            <button type="submit">List Your Vehicle</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Perks Sections Grid -->
+            <div class="perks-wrapper">
+                <section class="perks-section">
+                    <h2>Extensive Market Exposure</h2>
+                    <p>By listing your vehicle on our platform, you gain access
+                        to a broad and diverse audience of potential buyers
+                        actively searching for their next vehicle. This exposure
+                        significantly increases the visibility of your listing,
+                        enhancing the likelihood of finding a buyer quickly and
+                        efficiently.</p>
+                </section>
+
+                <section class="perks-section">
+                    <h2>Effortless Listing Process</h2>
+                    <p>Our user-friendly interface simplifies the process of
+                        creating detailed and appealing vehicle listings. You
+                        can easily showcase your vehicle’s unique features,
+                        specifications, and condition through customizable
+                        fields and rich media, ensuring that your listing stands
+                        out and attracts interested buyers effectively.</p>
+                </section>
+            </div>
+
+        </main>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    </body>
+</html>

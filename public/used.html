@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <title>Used Trucks Listing</title>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0; /* Soft background color */
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+} 
+
+.card {
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* Ensure contents do not overflow */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Set fixed image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 0;
+}
+
+.card p {
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.card .enquire {
+  position: relative;
+    left: 19%;
+    top: -5px;
+    display: block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 9px 11px;
+    border-radius: 100px;
+    border: 2px solid #D32312;
+    text-align: center;
+    text-decoration: auto;
+    width: 150px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card .enquire:hover {
+  background-color: #D62317;
+  color: rgb(255, 255, 255);
+  transition: 0.3s  ease-in-out;
+}
+.pdf {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #D32312;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+ @media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+}
+</style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+    load("uheader.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+    }
+</script>
+    <div class="container">
+      <div class="card">
+        <h2>Pro 6037</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F730ff8571c34cf365bf5e205db55d9a6.jfif&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 31250</p>
+        <p>Age: 6</p>
+        <p>Kilometers: 200000</p>
+        <p>State: Andhra Pradesh</p>
+        <p>Ownership: 1st OWNER</p>
+        <p>Year of Manufacture: 2018</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+      <div class="card">
+        <h2>Pro 5040</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F2c973c8001cc2698ec21fbd7d91793d0.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: NA</p>
+        <p>Age: 9</p>
+        <p>Kilometers: NA</p>
+        <p>State: Haryana</p>
+        <p>Ownership: Single</p>
+        <p>Year of Manufacture: 2015</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+
+      <div class="card">
+        <h2>Pro 6049</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F8368dc9906aca512ab3d6cab07878fb1.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: NA</p>
+        <p>Age: 8</p>
+        <p>Kilometers: NA</p>
+        <p>State: Rajasthan</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2016</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+
+      <div class="card">
+        <h2>Pro 8035XM</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F53c9c442e696ce8abe2b614bfbcb32cb.jpg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: NA</p>
+        <p>Age: 4</p>
+        <p>Kilometers: NA</p>
+        <p>State: Rajasthan</p>
+        <p>Ownership: First</p>
+        <p>Year of Manufacture: 2020</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+
+      <div class="card">
+        <h2>Pro 8035XM</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F25797bb8e5f73f65d3cf45081fc1b07a.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 25T</p>
+        <p>Age: 8</p>
+        <p>Kilometers: 150000</p>
+        <p>State: Andhra Pradesh</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2016</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+
+      <div class="card">
+        <h2>Pro 8035XM</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F1c879dda5cf2ab27f1f87c897e73fe97.png&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 25T</p>
+        <p>Age: 7</p>
+        <p>Kilometers: 150000</p>
+        <p>State: Tamilnadu</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2017</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+      <div class="card">
+        <h2>Pro 8031T</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F0bec3157c3144014a86a34f82b029b21.jpg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 21.5T</p>
+        <p>Age: 8</p>
+        <p>Kilometers: 180000</p>
+        <p>State: Karnataka</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2015</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+      <div class="card">
+        <h2>Pro 6055</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F1ab535d3a93d2cbb9098a7468b84826e.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 49T</p>
+        <p>Age: 6</p>
+        <p>Kilometers: 180000</p>
+        <p>State: Uttar Pradesh</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2018</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+      <div class="card">
+        <h2>6037HT</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2Fe4dfc199bd63070332caf8d279a1c946.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: NA</p>
+        <p>Age: 6</p>
+        <p>Kilometers: NA</p>
+        <p>State: Uttar Pradesh</p>
+        <p>Ownership: single</p>
+        <p>Year of Manufacture: 2018</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+      <div class="card">
+        <h2>Pro 5016</h2>
+        <img
+          src="https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fused-truck%2Flist%2F256f3051d43eb3310ee6577bebe33eeb.jpeg&w=384&q=75"
+          alt="Truck">
+        <p>Payload: 9t</p>
+        <p>Age: 6</p>
+        <p>Kilometers: 100000</p>
+        <p>State: Uttar Pradesh</p>
+        <p>Ownership: 1</p>
+        <p>Year of Manufacture: 2018</p>
+        <a href="profile.html" class="enquire">Enquire Now</a>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+    <script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById("footer").innerHTML = req.responseText;
+    }
+</script>
+  </body>
+</html>
