@@ -17,6 +17,36 @@ User-friendly UI/UX with smooth navigation
 
 Vehicle details with 3D interaction using Three.js
 
+🚀 How to Run Locally
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/Karanlashkari/Automotive-E-commerce-Website.git
+Install dependencies
+
+bash
+Copy
+Edit
+cd Automotive-E-commerce-Website
+npm install
+Start the server
+
+bash
+Copy
+Edit
+npm start
+Open your browser at http://localhost:3000
+
+📁 Folder Structure
+bash
+Copy
+Edit
+/client   → React frontend  
+/server   → Node.js backend API  
+/public   → Static assets  
+
 📌 Internship Outcome
 Learned real-world project structuring and collaboration
 
